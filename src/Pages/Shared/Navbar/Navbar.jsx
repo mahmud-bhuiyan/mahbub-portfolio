@@ -1,33 +1,25 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const navLinks = (
     <>
       <li>
-        <NavLink exact to="/" className="nav-link" activeClassName="active">
-          Home
-        </NavLink>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <NavLink to="/blog" className="nav-link" activeClassName="active">
-          Blog
-        </NavLink>
+        <Link to="/blog">Blog</Link>
       </li>
       <li>
-        <NavLink
-          to="/contact"
-          className="nav-link text-red-500 shadow-lg"
-          activeClassName="active"
-        >
+        <Link to="/contact" className="shadow-lg">
           Contact Me
-        </NavLink>
+        </Link>
       </li>
     </>
   );
 
   return (
     <div>
-      <div className="navbar bg-gray-200 flex justify-between items-center fixed z-10">
+      <div className="navbar bg-[#ECF0F3] flex justify-between items-center fixed z-10">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -53,9 +45,9 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <NavLink exact to="/" className="btn btn-ghost normal-case text-xl">
+          <Link to="/" className="btn btn-ghost normal-case text-xl">
             Mahbub
-          </NavLink>
+          </Link>
         </div>
 
         <div className="navbar-end">
