@@ -1,24 +1,34 @@
+import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa6";
+
 const Banner = () => {
   return (
-    <>
-      <div
-        className="hero min-h-screen"
-        style={{ backgroundImage: "url('/public/bg.png')" }}
-      >
-        <div className="hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
-            <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-            <p className="mb-5">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+    <div>
+      <div>
+        <div>
+          <h3>WELCOME TO MY WORLD</h3>
+          <h1>
+            Hi, I’m <span>Mahbub</span>
+          </h1>
+          <div>
+            <h5 className="uppercase">Find with me</h5>
+            <div className="flex gap-4">
+              <a>
+                <FaFacebookF></FaFacebookF>
+              </a>
+              <a>
+                <FaYoutube></FaYoutube>
+              </a>
+              <a>
+                <FaLinkedinIn></FaLinkedinIn>
+              </a>
+            </div>
           </div>
         </div>
+        <div>
+          <img src="/public/banner-01.png" alt="" />
+        </div>
       </div>
-    </>
+    </div>
   );
 };
 
