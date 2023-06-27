@@ -17,7 +17,7 @@ const Banner = () => {
   }, [texts.length]);
 
   return (
-    <div className="hero min-h-screen">
+    <div className="hero min-h-screen pt-16">
       <div className="hero-content flex-col lg:flex-row-reverse lg:gap-96">
         {/* img section */}
         <img
