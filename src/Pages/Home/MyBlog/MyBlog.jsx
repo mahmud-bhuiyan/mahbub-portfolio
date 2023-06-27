@@ -2,9 +2,9 @@ import SectionHeader from "../../../Components/SectionHeader";
 
 const MyBlog = () => {
   return (
-    <div className="pt-20 pb-24  lg:px-48 ">
+    <div className="bg-white pt-20 pb-24  lg:px-48 ">
       <SectionHeader
-        subHeading="visit my blog and share your feedback"
+        subHeading="visit my blog"
         heading="My Blog"
       />
       <div className="grid md:grid-cols-3 gap-10 mx-4 sm:mx-16 md:mx-10 lg:mx-0">

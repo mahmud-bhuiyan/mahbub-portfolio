@@ -13,15 +13,15 @@ const Footer = () => {
         </div>
         <div>
           <div className="grid grid-flow-col gap-4">
-            <a>
-              <FaFacebookF></FaFacebookF>
-            </a>
-            <a>
-              <FaYoutube></FaYoutube>
-            </a>
-            <a>
-              <FaLinkedinIn></FaLinkedinIn>
-            </a>
+            <Link to="/" className="btn drop-shadow-xl bg-[#ECF0F3]">
+              <FaLinkedinIn className="text-lg"></FaLinkedinIn>
+            </Link>
+            <Link to="/" className="btn mx-3 drop-shadow-xl bg-[#ECF0F3]">
+              <FaFacebookF className="text-lg"></FaFacebookF>
+            </Link>
+            <Link to="/" className="btn drop-shadow-xl bg-[#ECF0F3]">
+              <FaYoutube className="text-lg"></FaYoutube>
+            </Link>
           </div>
         </div>
       </footer>
@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
           <Link to="https://github.com/mahmud-bhuiyan" target="_blank">
             Designed & Developed By:{" "}
-            <span className="text-orange-500 font-bold">Mahmud</span>
+            <span className="text-orange-500 font-bold uppercase">Mahmud</span>
           </Link>
         </div>
       </footer>

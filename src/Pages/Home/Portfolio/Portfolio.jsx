@@ -2,11 +2,8 @@ import SectionHeader from "../../../Components/SectionHeader";
 
 const Portfolio = () => {
   return (
-    <div className="pt-20 pb-24  lg:px-48 ">
-      <SectionHeader
-        subHeading="visit my portfolio and share your feedback"
-        heading="my portfolio"
-      />
+    <div className="bg-white pt-20 pb-24  lg:px-48 ">
+      <SectionHeader subHeading="visit my portfolio" heading="my portfolio" />
       <div className="grid md:grid-cols-3 gap-10 mx-4 sm:mx-16 md:mx-10 lg:mx-0">
         <div className="card bg-base-100 drop-shadow-lg">
           <figure className="px-10 pt-10">

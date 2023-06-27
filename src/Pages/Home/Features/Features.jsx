@@ -2,7 +2,7 @@ import SectionTitle from "../../../Components/SectionTitle";
 
 const Features = () => {
   return (
-    <div className="bg-white pt-20 pb-24  lg:px-48 ">
+    <div className="pt-20 pb-24  lg:px-48 ">
       <SectionTitle subHeading="features" heading="What I Do" />
       <div className="grid md:grid-cols-3 gap-10 mx-4 sm:mx-16 md:mx-10 lg:mx-0">
         <div className="card bg-base-100 drop-shadow-lg">

@@ -17,12 +17,12 @@ const Banner = () => {
   }, [texts.length]);
 
   return (
-    <div className="hero min-h-screen pt-16">
+    <div className="hero min-h-screen pt-16 bg-white">
       <div className="hero-content flex-col lg:flex-row-reverse lg:gap-96">
         {/* img section */}
         <img
           src="/banner-01.png"
-          className="sm:w-1/2 lg:w-1/3 rounded-lg shadow-2xl"
+          className="sm:w-1/2 lg:w-1/3 rounded-lg shadow-2xl bg-[#ECF0F3] p-4"
         />
 
         {/* user info section */}
@@ -37,14 +37,14 @@ const Banner = () => {
           <div className="mt-10 lg:mt-24">
             <h5 className="mb-4 font-semibold">Connect With Me</h5>
             <div className="flex gap-4">
-              <Link to="/" className="btn shadow-xl">
-                <FaLinkedinIn></FaLinkedinIn>
+              <Link to="/" className="btn drop-shadow-xl bg-[#ECF0F3]">
+                <FaLinkedinIn className="text-lg"></FaLinkedinIn>
               </Link>
-              <Link to="/" className="btn shadow-xl mx-3">
-                <FaFacebookF></FaFacebookF>
+              <Link to="/" className="btn mx-3 drop-shadow-xl bg-[#ECF0F3]">
+                <FaFacebookF className="text-lg"></FaFacebookF>
               </Link>
-              <Link to="/" className="btn shadow-xl">
-                <FaYoutube></FaYoutube>
+              <Link to="/" className="btn drop-shadow-xl bg-[#ECF0F3]">
+                <FaYoutube className="text-lg"></FaYoutube>
               </Link>
             </div>
           </div>
