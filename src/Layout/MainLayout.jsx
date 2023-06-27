@@ -4,12 +4,10 @@ import Footer from "../Pages/Shared/Footer/Footer";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="bg-[#ECF0F3] max-w-screen-2xl mx-auto">
       <Navbar></Navbar>
-      <div className="max-w-screen-2xl mx-auto pt-16">
-        <Outlet></Outlet>
-        <Footer></Footer>
-      </div>
+      <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
