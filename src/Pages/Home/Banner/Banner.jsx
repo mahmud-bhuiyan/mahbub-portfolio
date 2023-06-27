@@ -9,44 +9,46 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 1500);
+    }, 2000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [texts.length]);
 
   return (
     <>
-      <div className="mt-6 bg-green-500">
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-2/3">
-            <div>
-              <h3 className="text-xs">WELCOME TO MY WORLD</h3>
-              <h1 className="text-3xl font-bold">
-                Hi, I’m <span className="text-orange-500">Mahbub</span>
-              </h1>
-              <h3>
-                a <span>{texts[currentTextIndex]}</span>
-              </h3>
-            </div>
-            <div className="mt-4">
-              <h5 className="uppercase">Find with me</h5>
-              <div className="flex gap-4 mt-3">
-                <Link to="/" className="btn shadow-lg">
+      <div className="hero min-h-screen bg-[#ECF0F3]">
+        <div className="hero-content flex-col lg:flex-row-reverse lg:gap-96">
+          {/* img section */}
+          <img
+            src="/banner-01.png"
+            className="sm:w-1/2 lg:w-1/3 rounded-lg shadow-2xl"
+          />
+
+          {/* user info section */}
+          <div className="mt-10 lg:mt-0">
+            <h6 className="text-sm">WELCOME TO MY WORLD</h6>
+            <h1 className="text-5xl font-bold my-3">
+              Hi, I’m <span className="text-orange-500">Mahbub</span>
+            </h1>
+            <h3 className="text-3xl font-bold">
+              a <span>{texts[currentTextIndex]}</span>
+            </h3>
+            <div className="mt-10 lg:mt-24">
+              <h5 className="mb-4 font-semibold">Connect With Me</h5>
+              <div className="flex gap-4">
+                <Link to="/" className="btn shadow-xl">
                   <FaLinkedinIn></FaLinkedinIn>
                 </Link>
-                <Link to="/" className="btn shadow-lg">
+                <Link to="/" className="btn shadow-xl mx-3">
                   <FaFacebookF></FaFacebookF>
                 </Link>
-                <Link to="/" className="btn shadow-lg">
+                <Link to="/" className="btn shadow-xl">
                   <FaYoutube></FaYoutube>
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="lg:w-1/3">
-            <img src="/banner-01.png" alt="" className="w-full h-auto" />
           </div>
         </div>
       </div>
