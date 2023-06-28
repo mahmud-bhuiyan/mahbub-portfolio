@@ -44,7 +44,7 @@ const Banner = () => {
                 <FaFacebookF className="text-lg"></FaFacebookF>
               </Link>
               <Link to="/" className="btn drop-shadow-xl bg-[#ECF0F3]">
-                <FaYoutube className="text-lg"></FaYoutube>
+                <FaYoutube className="text-xl"></FaYoutube>
               </Link>
             </div>
           </div>
